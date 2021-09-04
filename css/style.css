@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    /*background-color: bisque;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.container{
+   width: 100%;
+   height: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+#clock {
+    position:relative;
+    font-size: 80px;
+    margin: 0;
+    text-shadow: 1px 1px 5px #000;
+
+
+    
+}
+.todo__class{
+    
+  
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+
+
+#weather{
+    position: absolute;
+    top : 18px;
+    right: 20px;
+}
+
+#quote{
+    position: absolute;
+    margin: auto;
+    bottom: 18px;
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.todo__class{
+    margin-top: 8px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+#login-form{
+   position: relative;
+   top: 70px;
+}
+
+#greeting{
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #000;
+}
+#list_container{
+    margin: 4px 0;
+    width: 300px;
+    height: 210px;
+    background-color : rgba(0,0,0,0.5);
+    border-radius: 6px;
+    padding: 10px;
+    overflow: auto;
+}
+#list_container::-webkit-scrollbar{
+   width: 10px;
+   
+   
+}
+#list_container::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    border-radius: 30px;
+    
+}
+#list_container::-webkit-scrollbar-track{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 4px;
+   
+    
+}
+
+
+#todo__form input{
+    width: 300px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid white;
+    font-style: oblique;
+   
+}
+#todo__form input::placeholder{
+    opacity: 0.8;
+    color: whitesmoke;
+}
+
+#todo__list button{
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+#todo__list{
+    list-style: none;
+    padding-right: 20;
+    word-wrap: break-word;
+    
+}
+
+#login-form input[type=text]{
+    background-color: rgba(235, 231, 231, 0.5);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+}
+#login-form input[type=text]::placeholder{
+  color: black;
+  font-size: large;
+  font-weight: 600;
+}
+#login-form input[type=submit]{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    height: 40px;
+    width: 70px;
+    font-size: medium;
+}
